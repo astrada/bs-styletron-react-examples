@@ -1,7 +1,7 @@
 let reactClass =
   Styletron.React.makeStyledClass(
     ~base=`String("div"),
-    ~rule=(_props) => {"flexGrow": "1", "flexBasis": "10rem", "backgroundColor": "Teal"}
+    ~rule=(_props) => Css.(style([flexGrow(1), flexBasis(rem(10.)), backgroundColor(teal)]))
   );
 
 let make = (children) => ReasonReact.wrapJsForReason(~reactClass, ~props=Js.Obj.empty(), children);

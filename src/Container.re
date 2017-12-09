@@ -2,14 +2,17 @@ let make = (children) =>
   Styletron.React.makeStyled(
     ~base=`String("div"),
     ~rule=
-      (_props) => {
-        "display": "flex",
-        "flexWrap": "wrap",
-        "textAlign": "center",
-        "fontFamily": "sans-serif",
-        "lineHeight": "10",
-        "color": "WhiteSmoke"
-      },
+      (_props) =>
+        Css.(
+          style([
+            display(Flex),
+            flexWrap(Wrap),
+            textAlign(Center),
+            fontFamily("sans-serif"),
+            lineHeight(rem(10.)),
+            color(whitesmoke)
+          ])
+        ),
     ~props=Js.Obj.empty(),
     children
   );

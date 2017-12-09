@@ -8,7 +8,7 @@ module Component = {
 
 let make = (~href, children) =>
   Styletron.React.makeStyledComponent(
-    ~rule=(_props) => {"flexGrow": "1", "flexBasis": "10rem", "backgroundColor": "Salmon"},
+    ~rule=(_props) => Css.(style([flexGrow(1), flexBasis(rem(10.)), backgroundColor(salmon)])),
     ~component=Component.component,
     ~make=Component.make(~href),
     children
