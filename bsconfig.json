@@ -1,0 +1,9 @@
+{
+  "name": "bs-styletron-react-examples",
+  "sources": ["src"],
+  "bs-dependencies": ["reason-react", "bs-styletron-react"],
+  "reason": {
+    "react-jsx": 2
+  },
+  "refmt": 3
+}
