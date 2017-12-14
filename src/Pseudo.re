@@ -1,8 +1,8 @@
-let make = (children) =>
+let make = children =>
   Styletron.React.makeStyled(
     ~base=`ReactClass(Basic.reactClass),
     ~rule=
-      (_props) =>
+      _props =>
         Css.(
           style([
             background(Color(fuchsia)),

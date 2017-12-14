@@ -1,8 +1,8 @@
-let make = (children) =>
+let make = children =>
   Styletron.React.makeStyled(
     ~base=`String("div"),
     ~rule=
-      (_props) =>
+      _props =>
         Css.(
           style([
             display(Flex),
