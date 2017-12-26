@@ -1226,9 +1226,9 @@ browserslist@^2.1.2, browserslist@^2.1.3:
     caniuse-lite "^1.0.30000758"
     electron-to-chromium "^1.3.27"
 
-bs-css-core@^0.1.0:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/bs-css-core/-/bs-css-core-0.1.2.tgz#4cf980004254c7c2a75922864a3c643342e4bc34"
+bs-css-core@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/bs-css-core/-/bs-css-core-0.2.0.tgz#06beabe54c97cf93d9911928993db4662dd0c058"
 
 bs-jest@^0.2.0:
   version "0.2.0"
@@ -1243,9 +1243,9 @@ bs-loader@^1.8.0:
     loader-utils "^1.1.0"
     read-bsconfig "^1.0.1"
 
-bs-styletron-react@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/bs-styletron-react/-/bs-styletron-react-0.1.0.tgz#0b4fe191a6969f996af46017967332b752b4bb03"
+bs-styletron-react@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/bs-styletron-react/-/bs-styletron-react-0.1.1.tgz#acfa844c958c0d8d6f46e457dcf6a4950b82ce0e"
   dependencies:
     styletron-client "^3.0.0-rc.3"
     styletron-react "^3.0.0-rc.3"

@@ -11,7 +11,7 @@ let make = (~href, children) =>
   Styletron.React.makeStyledComponent(
     ~rule=
       _props =>
-        Css.(
+        BsCssCore.Css.(
           style([flexGrow(1), flexBasis(rem(10.)), backgroundColor(salmon)])
         ),
     ~component=Component.component,

@@ -3,7 +3,7 @@ let make = children =>
     ~base=`ReactClass(Basic.reactClass),
     ~rule=
       _props =>
-        Css.(
+        BsCssCore.Css.(
           style([
             selector(
               "@media (min-width: 300px)",

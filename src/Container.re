@@ -3,7 +3,7 @@ let make = children =>
     ~base=`String("div"),
     ~rule=
       _props =>
-        Css.(
+        BsCssCore.Css.(
           style([
             display(Flex),
             flexWrap(Wrap),
