@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@astrada/bs-styletron-react@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@astrada/bs-styletron-react/-/bs-styletron-react-0.1.3.tgz#ea826f68f01ad58b1528cdcccf970cceb14a72fc"
+  dependencies:
+    styletron-client "^3.0.2"
+    styletron-react "^3.0.3"
+
 "@types/react@*":
   version "16.0.28"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.28.tgz#eb0b31272528da8f20477ec27569c4f767315b33"
@@ -1243,17 +1250,6 @@ bs-loader@^1.8.0:
     loader-utils "^1.1.0"
     read-bsconfig "^1.0.1"
 
-bs-platform@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-2.1.0.tgz#63560ff8f7142c9c0631559df1c35590b9f6d8b2"
-
-bs-styletron-react@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/bs-styletron-react/-/bs-styletron-react-0.1.2.tgz#cf2921ed3b9e45dd731fb6158a2ebc7939239be6"
-  dependencies:
-    styletron-client "^3.0.0-rc.3"
-    styletron-react "^3.0.0-rc.3"
-
 bser@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/bser/-/bser-1.0.2.tgz#381116970b2a6deea5646dd15dd7278444b56169"
@@ -2281,6 +2277,12 @@ eslint-module-utils@^2.0.0:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
 
+eslint-plugin-cup@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-cup/-/eslint-plugin-cup-1.0.0.tgz#6ceced9a06d29e6e7bdc76ca9e398c9bf53072be"
+  dependencies:
+    globals "^10.0.0"
+
 eslint-plugin-flowtype@2.34.0:
   version "2.34.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-2.34.0.tgz#b9875f314652e5081623c9d2b18a346bbb759c09"
@@ -2886,6 +2888,10 @@ global-prefix@^1.0.1:
     is-windows "^1.0.1"
     which "^1.2.14"
 
+globals@^10.0.0:
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-10.4.0.tgz#5c477388b128a9e4c5c5d01c7a2aca68c68b2da7"
+
 globals@^9.14.0, globals@^9.18.0:
   version "9.18.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-9.18.0.tgz#aa3896b3e69b487f17e31ed2143d69a8e30c2d8a"
@@ -3252,9 +3258,9 @@ ini@^1.3.4, ini@~1.3.0:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.4.tgz#0537cb79daf59b59a1a517dff706c86ec039162e"
 
-inline-style-prefixer@^3.0.3:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-3.0.8.tgz#8551b8e5b4d573244e66a34b04f7d32076a2b534"
+inline-style-prefixer@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-4.0.0.tgz#30a03df1b346ba6b1fb8a812bc3c9dabef48022d"
   dependencies:
     bowser "^1.7.3"
     css-in-js-utils "^2.0.0"
@@ -5373,7 +5379,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -5515,16 +5521,7 @@ react-dev-utils@^3.0.2, react-dev-utils@^3.1.0:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-"react-dom@>=15.0.0 || >=16.0.0":
-  version "16.1.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.1.1.tgz#b2e331b6d752faf1a2d31399969399a41d8d45f8"
-  dependencies:
-    fbjs "^0.8.16"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.0"
-
-react-dom@^16.2.0:
+"react-dom@>=15.0.0 || >=16.0.0", react-dom@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
   dependencies:
@@ -5544,16 +5541,7 @@ react-error-overlay@^1.0.9:
     settle-promise "1.0.0"
     source-map "0.5.6"
 
-"react@>=15.0.0 || >=16.0.0":
-  version "16.1.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.1.1.tgz#d5c4ef795507e3012282dd51261ff9c0e824fe1f"
-  dependencies:
-    fbjs "^0.8.16"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.0"
-
-react@^16.2.0:
+"react@>=15.0.0 || >=16.0.0", react@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
   dependencies:
@@ -5643,9 +5631,9 @@ readline2@^1.0.1:
     is-fullwidth-code-point "^1.0.0"
     mute-stream "0.0.5"
 
-reason-react@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/reason-react/-/reason-react-0.3.0.tgz#c3ad272ed2dd2757f6934fcaacba9b192b891f57"
+reason-react@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/reason-react/-/reason-react-0.3.1.tgz#55d5fcd07825299ce5d04f99e763bf2af1f9e0f2"
   dependencies:
     react ">=15.0.0 || >=16.0.0"
     react-dom ">=15.0.0 || >=16.0.0"
@@ -6414,37 +6402,38 @@ style-loader@0.18.2:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
 
-styletron-client@^3.0.0-rc.3, styletron-client@^3.0.0-rc.5:
-  version "3.0.0-rc.5"
-  resolved "https://registry.yarnpkg.com/styletron-client/-/styletron-client-3.0.0-rc.5.tgz#275ca0b5f971d244f0e42079ad570be9c31a2a70"
+styletron-client@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/styletron-client/-/styletron-client-3.0.2.tgz#9b2853e8b94e6e94d70166b8403f27ab2d10c514"
   dependencies:
-    styletron-core "^3.0.0-rc.3"
+    styletron-core "^3.0.2"
 
-styletron-core@^3.0.0-rc.3:
-  version "3.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/styletron-core/-/styletron-core-3.0.0-rc.3.tgz#9468e275d9085d2e5d6d6468cc6d8733dbfa3cba"
+styletron-core@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/styletron-core/-/styletron-core-3.0.2.tgz#67513feed50fb39753f72e547d00dfdb619ae79f"
 
-styletron-react@^3.0.0-rc.3:
-  version "3.0.0-rc.5"
-  resolved "https://registry.yarnpkg.com/styletron-react/-/styletron-react-3.0.0-rc.5.tgz#99b3e85b9c59eac78a4c3f1110a9774e5ede5e60"
+styletron-react@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/styletron-react/-/styletron-react-3.0.3.tgz#67d2932db82972e0ea60544b7d5b8c6d5aecd3a3"
   dependencies:
     "@types/react" "*"
-    prop-types "^15.5.8"
-    styletron-client "^3.0.0-rc.5"
-    styletron-server "^3.0.0-rc.3"
-    styletron-utils "^3.0.0-rc.3"
+    eslint-plugin-cup "^1.0.0"
+    prop-types "^15.6.0"
+    styletron-client "^3.0.2"
+    styletron-server "^3.0.2"
+    styletron-utils "^3.0.2"
 
-styletron-server@^3.0.0-rc.3:
-  version "3.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/styletron-server/-/styletron-server-3.0.0-rc.3.tgz#07d14c808d2f89a90cfafe3551ba7c748923191b"
+styletron-server@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/styletron-server/-/styletron-server-3.0.2.tgz#0b989c833ed48437d68b728f65e9406fb8802de6"
   dependencies:
-    styletron-core "^3.0.0-rc.3"
+    styletron-core "^3.0.2"
 
-styletron-utils@^3.0.0-rc.3:
-  version "3.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/styletron-utils/-/styletron-utils-3.0.0-rc.3.tgz#21fef2099f1c368e6ff2b8f76bf7a64bb547b760"
+styletron-utils@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/styletron-utils/-/styletron-utils-3.0.2.tgz#3bd18f60d8a8534e19d500ffa052a2f1c6c31198"
   dependencies:
-    inline-style-prefixer "^3.0.3"
+    inline-style-prefixer "^4.0.0"
 
 supports-color@^2.0.0:
   version "2.0.0"

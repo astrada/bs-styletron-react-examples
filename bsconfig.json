@@ -1,7 +1,10 @@
 {
   "name": "bs-styletron-react-examples",
   "sources": ["src"],
-  "bs-dependencies": ["reason-react", "bs-styletron-react", "bs-css-core"],
+  "bs-dependencies": [
+    "reason-react",
+    "@astrada/bs-styletron-react",
+    "bs-css-core"],
   "reason": {
     "react-jsx": 2
   },
