@@ -3,13 +3,13 @@ let make = children =>
     ~base=`String("div"),
     ~rule=
       _props =>
-        BsCssCore.Css.(
+        Css.(
           style([
-            display(Flex),
-            flexWrap(Wrap),
-            textAlign(Center),
+            display(`flex),
+            flexWrap(wrap),
+            textAlign(center),
             fontFamily("sans-serif"),
-            lineHeight(rem(10.)),
+            lineHeight(10.),
             color(whitesmoke)
           ])
         ),

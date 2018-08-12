@@ -3,9 +3,9 @@ let make = children =>
     ~base=`ReactClass(Basic.reactClass),
     ~rule=
       _props =>
-        BsCssCore.Css.(
+        Css.(
           style([
-            background(Color(fuchsia)),
+            backgroundColor(fuchsia),
             selector(":after", [unsafe("content", {j|\u263A|j})])
           ])
         ),

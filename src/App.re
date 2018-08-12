@@ -9,7 +9,7 @@ let make = _children => {
         <Pseudo> ":pseudo example" </Pseudo>
         <Media> "@media example" </Media>
         <Link href="https://github.com/rtsao/styletron">
-          (ReasonReact.stringToElement("Link example"))
+          (ReasonReact.string("Link example"))
         </Link>
       </Container>
     </Styletron.React.Provider>

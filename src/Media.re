@@ -3,13 +3,13 @@ let make = children =>
     ~base=`ReactClass(Basic.reactClass),
     ~rule=
       _props =>
-        BsCssCore.Css.(
+        Css.(
           style([
             selector(
               "@media (min-width: 300px)",
-              [background(Color(crimson))]
+              [backgroundColor(crimson)]
             ),
-            selector("@media (min-width: 600px)", [background(Color(indigo))])
+            selector("@media (min-width: 600px)", [backgroundColor(indigo)])
           ])
         ),
     ~props=Js.Obj.empty(),

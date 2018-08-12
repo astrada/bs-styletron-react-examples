@@ -3,7 +3,7 @@ module Component = {
   let make = (~href, ~className, children) => {
     ...component,
     render: _self =>
-      <a className href> (ReasonReact.arrayToElement(children)) </a>
+      <a className href> (ReasonReact.array(children)) </a>
   };
 };
 
@@ -11,7 +11,7 @@ let make = (~href, children) =>
   Styletron.React.makeStyledComponent(
     ~rule=
       _props =>
-        BsCssCore.Css.(
+        Css.(
           style([flexGrow(1), flexBasis(rem(10.)), backgroundColor(salmon)])
         ),
     ~component=Component.component,

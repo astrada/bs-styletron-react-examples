@@ -4,7 +4,7 @@
   "bs-dependencies": [
     "reason-react",
     "@astrada/bs-styletron-react",
-    "bs-css-core"],
+    "@astrada/bs-css-core"],
   "reason": {
     "react-jsx": 2
   },
