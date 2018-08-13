@@ -12,5 +12,8 @@ let make = _children => {
           (ReasonReact.string("Link example"))
         </Link>
       </Container>
+      <Container>
+        <Toggle />
+      </Container>
     </Styletron.React.Provider>
 };
