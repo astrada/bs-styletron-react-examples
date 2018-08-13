@@ -9,6 +9,7 @@ module Container = {
           Css.(
             style([
               flexGrow(1),
+              backgroundColor(wheat)
             ])
           ),
       ~props=Js.Obj.empty(),
@@ -17,6 +18,11 @@ module Container = {
 };
 
 module Indicator = {
+  [@bs.deriving abstract]
+  type props = {
+    [@bs.as "$active"] active: bool
+  };
+
   let make = (~active, children) =>
     Styletron.React.makeStyled(
       ~base=`String("h2"),
@@ -24,12 +30,12 @@ module Indicator = {
         props =>
           Css.(
             style([
-              backgroundColor(if (props##active) { green } else { grey }),
-              color(if (props##active) { white } else { black }),
+              backgroundColor(if (props->activeGet) { green } else { grey }),
+              color(if (props->activeGet) { white } else { black }),
               textAlign(center)
             ])
           ),
-      ~props={"active": active},
+      ~props=props(~active),
       children
     );
 };

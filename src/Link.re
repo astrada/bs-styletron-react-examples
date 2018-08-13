@@ -1,9 +1,18 @@
 module Component = {
+  [@bs.deriving abstract]
+  type props = {
+    children: array(ReasonReact.reactElement),
+    className: string,
+    href: string
+  };
+
   let component = ReasonReact.statelessComponent("Component");
-  let make = (~href, ~className, children) => {
+  let make = (~props, _children) => {
     ...component,
     render: _self =>
-      <a className href> (ReasonReact.array(children)) </a>
+      <a className={props->classNameGet} href={props->hrefGet}>
+        (ReasonReact.array(props->childrenGet))
+      </a>
   };
 };
 
@@ -12,9 +21,17 @@ let make = (~href, children) =>
     ~rule=
       _props =>
         Css.(
-          style([flexGrow(1), flexBasis(rem(10.)), backgroundColor(salmon)])
+          style([
+            flexGrow(1),
+            flexBasis(rem(10.)),
+            backgroundColor(salmon),
+            borderStyle(solid),
+            borderWidth(px(1))
+          ])
         ),
     ~component=Component.component,
-    ~make=Component.make(~href),
+    ~make=Component.make,
+    ~props=Component.props(~children=[||], ~className="", ~href),
     children
   );
+

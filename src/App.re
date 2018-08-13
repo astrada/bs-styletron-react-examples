@@ -11,8 +11,9 @@ let make = _children => {
         <Link href="https://github.com/rtsao/styletron">
           (ReasonReact.string("Link example"))
         </Link>
-      </Container>
-      <Container>
+        <Link href="https://github.com/styletron/styletron/tree/master/packages/styletron-react">
+          (ReasonReact.string("styletron-react"))
+        </Link>
         <Toggle />
       </Container>
     </Styletron.React.Provider>
