@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@astrada/bs-css-core@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@astrada/bs-css-core/-/bs-css-core-0.3.4.tgz#705c9fa4c3e4d202ccb5cb6a02002386586ea93c"
+"@astrada/bs-css-core@^7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@astrada/bs-css-core/-/bs-css-core-7.1.0.tgz#f50b2d71277363bd3ec8fcf3e9b63c6fddee5629"
 
 "@astrada/bs-styletron-react@^0.3.0":
   version "0.3.0"
@@ -157,7 +157,7 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@glennsl/bs-jest@^0.4.2":
+"@glennsl/bs-jest@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@glennsl/bs-jest/-/bs-jest-0.4.3.tgz#692d822a4ae02f10e534ad0defe7b8f96854af44"
   dependencies:
@@ -1486,9 +1486,9 @@ bs-loader@^2.0.3:
     loader-utils "^1.1.0"
     read-bsconfig "^1.0.1"
 
-bs-platform@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-4.0.3.tgz#4510c1c915cc5b169b5717e5c0ada52d3f99ff98"
+bs-platform@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-4.0.5.tgz#d4fd9bbdd11765af5b75110a5655065ece05eed6"
 
 bsb-js@^1.0.0:
   version "1.1.6"
@@ -6705,7 +6705,7 @@ realpath-native@^1.0.0:
   dependencies:
     util.promisify "^1.0.0"
 
-reason-react@^0.5.0:
+reason-react@^0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/reason-react/-/reason-react-0.5.3.tgz#10601809742fd991109ec9d69ad4baf2c3f17540"
   dependencies:

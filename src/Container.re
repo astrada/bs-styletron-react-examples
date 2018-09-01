@@ -9,7 +9,7 @@ let make = children =>
             flexWrap(wrap),
             textAlign(center),
             fontFamily("sans-serif"),
-            lineHeight(3.),
+            lineHeight(em(3.)),
             color(whitesmoke)
           ])
         ),
